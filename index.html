@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laraib Khan | IC Design Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f7f9fc;
+            color: #172033;
+            line-height: 1.6;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: white;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        }
+
+        nav .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #2563eb;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #172033;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #2563eb;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 90px 20px;
+            background: white;
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            margin-bottom: 10px;
+        }
+
+        .hero h2 {
+            color: #2563eb;
+            font-size: 25px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #64748b;
+            margin-bottom: 30px;
+        }
+
+        .buttons a {
+            display: inline-block;
+            padding: 12px 25px;
+            margin: 5px;
+            border-radius: 7px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .primary {
+            background: #2563eb;
+            color: white;
+        }
+
+        .secondary {
+            border: 2px solid #2563eb;
+            color: #2563eb;
+        }
+
+        section {
+            padding: 70px 10%;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 35px;
+        }
+
+        .about {
+            max-width: 850px;
+            margin: auto;
+            text-align: center;
+            color: #526070;
+            font-size: 17px;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-box {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+        }
+
+        .skill-box h3 {
+            color: #2563eb;
+            margin-bottom: 10px;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .project {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+            transition: 0.3s;
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
+        }
+
+        .project h3 {
+            color: #2563eb;
+            margin-bottom: 10px;
+        }
+
+        .project p {
+            color: #596579;
+            margin-bottom: 15px;
+        }
+
+        .project a {
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .experience {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .experience-box {
+            background: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-left: 4px solid #2563eb;
+            border-radius: 8px;
+        }
+
+        .experience-box h3 {
+            color: #2563eb;
+        }
+
+        .contact {
+            text-align: center;
+            background: white;
+        }
+
+        .contact a {
+            color: #2563eb;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #172033;
+            color: white;
+        }
+
+        @media (max-width: 700px) {
+            nav ul {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">Laraib Khan</div>
+
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <section class="hero">
+
+        <h1>Laraib Khan</h1>
+
+        <h2>Computer Systems Engineering Graduate</h2>
+
+        <p>
+            Digital IC Design • ASIC Physical Design • FPGA Development
+        </p>
+
+        <div class="buttons">
+
+            <a class="primary"
+               href="resume.pdf"
+               target="_blank">
+                View Resume
+            </a>
+
+            <a class="secondary"
+               href="https://github.com/laraibkhan5"
+               target="_blank">
+                GitHub
+            </a>
+
+            <a class="secondary"
+               href="https://www.linkedin.com/"
+               target="_blank">
+                LinkedIn
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <section id="about">
+
+        <h2>About Me</h2>
+
+        <div class="about">
+
+            <p>
+                I am a Computer Systems Engineering graduate with a strong
+                interest in Digital IC Design, ASIC Physical Design, RTL
+                Design, and FPGA Development. Through hands-on projects and
+                IC Design training, I have gained practical experience in
+                Verilog HDL, FPGA implementation, RTL-to-GDS flow, physical
+                design, and digital system development.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section id="skills">
+
+        <h2>Technical Skills</h2>
+
+        <div class="skills">
+
+            <div class="skill-box">
+                <h3>HDL & Programming</h3>
+                <p>Verilog HDL, C++, Python</p>
+            </div>
+
+            <div class="skill-box">
+                <h3>FPGA</h3>
+                <p>Vivado, FPGA Implementation, Simulation</p>
+            </div>
+
+            <div class="skill-box">
+                <h3>ASIC & Physical Design</h3>
+                <p>OpenLane, OpenROAD, RTL-to-GDS, PnR, STA</p>
+            </div>
+
+            <div class="skill-box">
+                <h3>Digital Design</h3>
+                <p>FSM, RTL Design, Memory Controllers, Digital Systems</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="projects">
+
+        <h2>Projects</h2>
+
+        <div class="projects">
+
+            <div class="project">
+                <h3>UART Transmitter & Receiver</h3>
+                <p>
+                    Designed and implemented a UART communication system
+                    using Verilog HDL and verified the design through
+                    simulation and FPGA implementation.
+                </p>
+                <a href="https://github.com/laraibkhan5/UART-Transmitter-and-Receiver-Design"
+                   target="_blank">
+                    View on GitHub →
+                </a>
+            </div>
+
+
+            <div class="project">
+                <h3>RTL-to-GDS Physical Design</h3>
+                <p>
+                    Executed the complete RTL-to-GDS physical design flow
+                    using OpenLane/OpenROAD including synthesis, floorplanning,
+                    PDN, placement, CTS, routing, STA and GDS generation.
+                </p>
+                <a href="https://github.com/laraibkhan5/ASIC-Physical-Design-using-OpenLane-2.0"
+                   target="_blank">
+                    View on GitHub →
+                </a>
+            </div>
+
+
+            <div class="project">
+                <h3>Cache Controller</h3>
+                <p>
+                    Designed a Cache Controller using Verilog HDL with
+                    cache memory operations, hit/miss detection and
+                    memory access control.
+                </p>
+                <a href="https://github.com/laraibkhan5"
+                   target="_blank">
+                    View on GitHub →
+                </a>
+            </div>
+
+
+            <div class="project">
+                <h3>Cache Simulator</h3>
+                <p>
+                    Developed a C++ cache simulator supporting cache size,
+                    associativity, replacement policies, hit/miss detection
+                    and cache line evictions.
+                </p>
+                <a href="https://github.com/laraibkhan5"
+                   target="_blank">
+                    View on GitHub →
+                </a>
+            </div>
+
+
+            <div class="project">
+                <h3>VGA using SRAM</h3>
+                <p>
+                    Designed a VGA display system using SRAM to store pixel
+                    data and generate color information for display on a
+                    monitor.
+                </p>
+                <a href="https://github.com/laraibkhan5"
+                   target="_blank">
+                    View on GitHub →
+                </a>
+            </div>
+
+
+            <div class="project">
+                <h3>Single-Port SRAM Controller</h3>
+                <p>
+                    Designed and implemented a single-port SRAM controller
+                    supporting read and write operations using Verilog HDL.
+                </p>
+                <a href="https://github.com/laraibkhan5"
+                   target="_blank">
+                    View on GitHub →
+                </a>
+            </div>
+
+
+            <div class="project">
+                <h3>On-Chip Handshaking Protocol</h3>
+                <p>
+                    Designed a basic master-slave communication system using
+                    a handshaking protocol and FSM-based control in Logisim.
+                </p>
+                <a href="https://github.com/laraibkhan5"
+                   target="_blank">
+                    View on GitHub →
+                </a>
+            </div>
+
+
+            <div class="project">
+                <h3>AMBA Bus Protocol Implementation</h3>
+                <p>
+                    Worked on master-slave communication using AMBA bus
+                    protocols including APB, AHB and AXI concepts.
+                </p>
+                <a href="https://github.com/laraibkhan5"
+                   target="_blank">
+                    View on GitHub →
+                </a>
+            </div>
+
+
+            <div class="project">
+                <h3>Traffic Light Controller</h3>
+                <p>
+                    Designed an FSM-based traffic light controller using
+                    Verilog HDL with pedestrian crossing functionality
+                    and FPGA implementation.
+                </p>
+                <a href="https://github.com/laraibkhan5"
+                   target="_blank">
+                    View on GitHub →
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="experience">
+
+        <h2>Experience</h2>
+
+        <div class="experience">
+
+            <div class="experience-box">
+
+                <h3>IC Design Training</h3>
+
+                <p>
+                    Hands-on experience in RTL design, FPGA development,
+                    ASIC physical design and RTL-to-GDS flow using
+                    industry-relevant open-source tools.
+                </p>
+
+            </div>
+
+
+            <div class="experience-box">
+
+                <h3>Pakistan International Airlines (PIA)</h3>
+
+                <p>
+                    Electrical Engineering Intern with exposure to
+                    electrical systems, engineering practices and
+                    technical operations.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="contact" class="contact">
+
+        <h2>Let's Connect</h2>
+
+        <p>
+            Interested in Digital IC Design, FPGA Development and
+            ASIC Physical Design.
+        </p>
+
+        <br>
+
+        <a href="https://github.com/laraibkhan5" target="_blank">
+            GitHub
+        </a>
+
+        <a href="https://www.linkedin.com/" target="_blank">
+            LinkedIn
+        </a>
+
+        <a href="mailto:your-email@gmail.com">
+            Email
+        </a>
+
+    </section>
+
+
+    <footer>
+
+        <p>© 2026 Laraib Khan. All Rights Reserved.</p>
+
+    </footer>
+
+</body>
+</html>
