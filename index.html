@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laraib Khan | IC Design Portfolio</title>
+
+    <title>Laraib Khan | Computer Systems Engineering</title>
 
     <style>
         * {
@@ -32,7 +33,7 @@
             box-shadow: 0 2px 12px rgba(0,0,0,0.08);
         }
 
-        nav .logo {
+        .logo {
             font-size: 22px;
             font-weight: bold;
             color: #2563eb;
@@ -56,30 +57,39 @@
 
         .hero {
             text-align: center;
-            padding: 90px 20px;
+            padding: 75px 20px;
             background: white;
         }
 
+        .profile-pic {
+            width: 160px;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 22px;
+            border: 4px solid #2563eb;
+        }
+
         .hero h1 {
-            font-size: 52px;
-            margin-bottom: 10px;
+            font-size: 50px;
+            margin-bottom: 8px;
         }
 
         .hero h2 {
             color: #2563eb;
-            font-size: 25px;
-            margin-bottom: 15px;
+            font-size: 24px;
+            margin-bottom: 12px;
         }
 
         .hero p {
-            font-size: 18px;
             color: #64748b;
-            margin-bottom: 30px;
+            font-size: 18px;
+            margin-bottom: 28px;
         }
 
         .buttons a {
             display: inline-block;
-            padding: 12px 25px;
+            padding: 12px 24px;
             margin: 5px;
             border-radius: 7px;
             text-decoration: none;
@@ -97,7 +107,7 @@
         }
 
         section {
-            padding: 70px 10%;
+            padding: 65px 10%;
         }
 
         section h2 {
@@ -215,305 +225,338 @@
 
 <body>
 
-    <nav>
-        <div class="logo">Laraib Khan</div>
+<nav>
+    <div class="logo">Laraib Khan</div>
 
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
 
 
-    <section class="hero">
+<!-- HERO -->
 
-        <h1>Laraib Khan</h1>
+<section class="hero">
 
-        <h2>Computer Systems Engineering Graduate</h2>
+    <img src="profile.jpg" alt="Laraib Khan" class="profile-pic">
+
+    <h1>Laraib Khan</h1>
+
+    <h2>Computer Systems Engineering Graduate</h2>
+
+    <p>
+        Digital IC Design • ASIC Physical Design • FPGA Development
+    </p>
+
+    <div class="buttons">
+
+        <a class="primary"
+           href="resume.pdf"
+           target="_blank">
+            View Resume
+        </a>
+
+        <a class="secondary"
+           href="https://github.com/laraibkhan5"
+           target="_blank">
+            GitHub
+        </a>
+
+        <a class="secondary"
+           href="https://www.linkedin.com/in/laraib-khan-212a8326b/"
+           target="_blank">
+            LinkedIn
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section id="about">
+
+    <h2>About Me</h2>
+
+    <div class="about">
 
         <p>
-            Digital IC Design | ASIC Physical Design | FPGA Development
+            I am a Computer Systems Engineering graduate with a strong
+            interest in Digital IC Design, ASIC Physical Design, RTL Design,
+            FPGA Development and digital systems. Through hands-on IC Design
+            training and academic projects, I have gained practical
+            experience in Verilog HDL, FPGA implementation, RTL-to-GDS flow,
+            physical design and digital system development.
         </p>
 
-        <div class="buttons">
+    </div>
 
-            <a class="primary"
-               href="resume.pdf"
-               target="_blank">
-                View Resume
-            </a>
+</section>
 
-            <a class="secondary"
-               href="https://github.com/laraibkhan5"
-               target="_blank">
-                GitHub
-            </a>
 
-            <a class="secondary"
-               href="https://www.linkedin.com/in/laraib-khan-212a8326b/"
-               target="_blank">
-                LinkedIn
-            </a>
+<!-- SKILLS -->
 
+<section id="skills">
+
+    <h2>Technical Skills</h2>
+
+    <div class="skills">
+
+        <div class="skill-box">
+            <h3>HDL & Programming</h3>
+            <p>Verilog HDL, C++, Python</p>
         </div>
 
-    </section>
+        <div class="skill-box">
+            <h3>FPGA</h3>
+            <p>Vivado, FPGA Implementation, Simulation</p>
+        </div>
+
+        <div class="skill-box">
+            <h3>ASIC & Physical Design</h3>
+            <p>OpenLane, OpenROAD, RTL-to-GDS, PnR, STA</p>
+        </div>
+
+        <div class="skill-box">
+            <h3>Digital Design</h3>
+            <p>RTL Design, FSM, Memory Controllers, Digital Systems</p>
+        </div>
+
+    </div>
+
+</section>
 
 
-    <section id="about">
+<!-- PROJECTS -->
 
-        <h2>About Me</h2>
+<section id="projects">
 
-        <div class="about">
+    <h2>Projects</h2>
+
+    <div class="projects">
+
+
+        <div class="project">
+            <h3>UART Transmitter & Receiver</h3>
 
             <p>
-                I am a Computer Systems Engineering graduate with a strong
-                interest in Digital IC Design, ASIC Physical Design, RTL
-                Design, and FPGA Development. Through hands-on projects and
-                IC Design training, I have gained practical experience in
-                Verilog HDL, FPGA implementation, RTL-to-GDS flow, physical
-                design, and digital system development.
+                Designed and implemented a UART communication system using
+                Verilog HDL and verified the design through simulation and
+                FPGA implementation.
+            </p>
+
+            <a href="https://github.com/laraibkhan5/UART-Transmitter-and-Receiver-Design"
+               target="_blank">
+                View on GitHub →
+            </a>
+        </div>
+
+
+        <div class="project">
+            <h3>RTL-to-GDS Physical Design</h3>
+
+            <p>
+                Executed the RTL-to-GDS physical design flow using
+                OpenLane/OpenROAD including synthesis, floorplanning,
+                PDN, I/O placement, global and detailed placement,
+                CTS, routing, STA and GDS generation.
+            </p>
+
+            <a href="https://github.com/laraibkhan5/ASIC-Physical-Design-using-OpenLane-2.0"
+               target="_blank">
+                View on GitHub →
+            </a>
+        </div>
+
+
+        <div class="project">
+            <h3>Cache Controller</h3>
+
+            <p>
+                Designed a cache controller using Verilog HDL for managing
+                cache memory operations, hit/miss detection and memory
+                access control.
+            </p>
+
+            <a href="https://github.com/laraibkhan5"
+               target="_blank">
+                View on GitHub →
+            </a>
+        </div>
+
+
+        <div class="project">
+            <h3>Cache Simulator</h3>
+
+            <p>
+                Developed a C++ cache simulator supporting configurable
+                cache size, associativity, replacement policies, hit/miss
+                detection and cache line evictions.
+            </p>
+
+            <a href="https://github.com/laraibkhan5"
+               target="_blank">
+                View on GitHub →
+            </a>
+        </div>
+
+
+        <div class="project">
+            <h3>VGA using SRAM</h3>
+
+            <p>
+                Designed a VGA display system using SRAM to store pixel
+                data and generate color information for display on a
+                monitor.
+            </p>
+
+            <a href="https://github.com/laraibkhan5"
+               target="_blank">
+                View on GitHub →
+            </a>
+        </div>
+
+
+        <div class="project">
+            <h3>Single-Port SRAM Controller</h3>
+
+            <p>
+                Designed and implemented a single-port SRAM controller
+                supporting read and write operations using Verilog HDL.
+            </p>
+
+            <a href="https://github.com/laraibkhan5"
+               target="_blank">
+                View on GitHub →
+            </a>
+        </div>
+
+
+        <div class="project">
+            <h3>On-Chip Handshaking Protocol</h3>
+
+            <p>
+                Designed a simple master-slave communication system using
+                a handshaking protocol and FSM-based control in Logisim.
+            </p>
+
+            <a href="https://github.com/laraibkhan5"
+               target="_blank">
+                View on GitHub →
+            </a>
+        </div>
+
+
+        <div class="project">
+            <h3>AMBA Bus Protocol Implementation</h3>
+
+            <p>
+                Worked on master-slave communication and explored AMBA
+                bus protocols including APB, AHB and AXI.
+            </p>
+
+            <a href="https://github.com/laraibkhan5"
+               target="_blank">
+                View on GitHub →
+            </a>
+        </div>
+
+
+        <div class="project">
+            <h3>Traffic Light Controller</h3>
+
+            <p>
+                Designed an FSM-based traffic light controller using
+                Verilog HDL and implemented the design for FPGA.
+            </p>
+
+            <a href="https://github.com/laraibkhan5"
+               target="_blank">
+                View on GitHub →
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- EXPERIENCE -->
+
+<section id="experience">
+
+    <h2>Experience</h2>
+
+    <div class="experience">
+
+        <div class="experience-box">
+
+            <h3>IC Design Training</h3>
+
+            <p>
+                Hands-on experience in RTL design, FPGA development,
+                ASIC physical design and RTL-to-GDS flow using
+                OpenLane and OpenROAD.
             </p>
 
         </div>
 
-    </section>
 
+        <div class="experience-box">
 
-    <section id="skills">
+            <h3>Pakistan International Airlines (PIA)</h3>
 
-        <h2>Technical Skills</h2>
-
-        <div class="skills">
-
-            <div class="skill-box">
-                <h3>HDL & Programming</h3>
-                <p>Verilog HDL, C++, Python</p>
-            </div>
-
-            <div class="skill-box">
-                <h3>FPGA</h3>
-                <p>Vivado, FPGA Implementation, Simulation</p>
-            </div>
-
-            <div class="skill-box">
-                <h3>ASIC & Physical Design</h3>
-                <p>OpenLane, OpenROAD, RTL-to-GDS, PnR, STA</p>
-            </div>
-
-            <div class="skill-box">
-                <h3>Digital Design</h3>
-                <p>FSM, RTL Design, Memory Controllers, Digital Systems</p>
-            </div>
+            <p>
+                Electrical Engineering Intern with exposure to electrical
+                systems, engineering practices and technical operations.
+            </p>
 
         </div>
 
-    </section>
+    </div>
+
+</section>
 
 
-    <section id="projects">
+<!-- CONTACT -->
 
-        <h2>Projects</h2>
+<section id="contact" class="contact">
 
-        <div class="projects">
+    <h2>Let's Connect</h2>
 
-            <div class="project">
-                <h3>UART Transmitter & Receiver</h3>
-                <p>
-                    Designed and implemented a UART communication system
-                    using Verilog HDL and verified the design through
-                    simulation and FPGA implementation.
-                </p>
-                <a href="https://github.com/laraibkhan5/UART-Transmitter-and-Receiver-Design"
-                   target="_blank">
-                    View on GitHub →
-                </a>
-            </div>
+    <p>
+        Interested in Digital IC Design, FPGA Development and
+        ASIC Physical Design.
+    </p>
 
+    <br>
 
-            <div class="project">
-                <h3>RTL-to-GDS Physical Design</h3>
-                <p>
-                    Executed the complete RTL-to-GDS physical design flow
-                    using OpenLane/OpenROAD including synthesis, floorplanning,
-                    PDN, placement, CTS, routing, STA and GDS generation.
-                </p>
-                <a href="https://github.com/laraibkhan5/ASIC-Physical-Design-using-OpenLane-2.0"
-                   target="_blank">
-                    View on GitHub →
-                </a>
-            </div>
+    <a href="https://github.com/laraibkhan5" target="_blank">
+        GitHub
+    </a>
+
+    <a href="https://www.linkedin.com/in/laraib-khan-212a8326b/"
+       target="_blank">
+        LinkedIn
+    </a>
+
+    <a href="mailto:laraib.k.khan344@gmail.com">
+        Email
+    </a>
+
+</section>
 
 
-            <div class="project">
-                <h3>Cache Controller</h3>
-                <p>
-                    Designed a Cache Controller using Verilog HDL with
-                    cache memory operations, hit/miss detection and
-                    memory access control.
-                </p>
-                <a href="https://github.com/laraibkhan5"
-                   target="_blank">
-                    View on GitHub →
-                </a>
-            </div>
+<footer>
 
+    <p>© 2026 Laraib Khan. All Rights Reserved.</p>
 
-            <div class="project">
-                <h3>Cache Simulator</h3>
-                <p>
-                    Developed a C++ cache simulator supporting cache size,
-                    associativity, replacement policies, hit/miss detection
-                    and cache line evictions.
-                </p>
-                <a href="https://github.com/laraibkhan5"
-                   target="_blank">
-                    View on GitHub →
-                </a>
-            </div>
-
-
-            <div class="project">
-                <h3>VGA using SRAM</h3>
-                <p>
-                    Designed a VGA display system using SRAM to store pixel
-                    data and generate color information for display on a
-                    monitor.
-                </p>
-                <a href="https://github.com/laraibkhan5"
-                   target="_blank">
-                    View on GitHub →
-                </a>
-            </div>
-
-
-            <div class="project">
-                <h3>Single-Port SRAM Controller</h3>
-                <p>
-                    Designed and implemented a single-port SRAM controller
-                    supporting read and write operations using Verilog HDL.
-                </p>
-                <a href="https://github.com/laraibkhan5"
-                   target="_blank">
-                    View on GitHub →
-                </a>
-            </div>
-
-
-            <div class="project">
-                <h3>On-Chip Handshaking Protocol</h3>
-                <p>
-                    Designed a basic master-slave communication system using
-                    a handshaking protocol and FSM-based control in Logisim.
-                </p>
-                <a href="https://github.com/laraibkhan5"
-                   target="_blank">
-                    View on GitHub →
-                </a>
-            </div>
-
-
-            <div class="project">
-                <h3>AMBA Bus Protocol Implementation</h3>
-                <p>
-                    Worked on master-slave communication using AMBA bus
-                    protocols including APB, AHB and AXI concepts.
-                </p>
-                <a href="https://github.com/laraibkhan5"
-                   target="_blank">
-                    View on GitHub →
-                </a>
-            </div>
-
-
-            <div class="project">
-                <h3>Traffic Light Controller</h3>
-                <p>
-                    Designed an FSM-based traffic light controller using
-                    Verilog HDL with pedestrian crossing functionality
-                    and FPGA implementation.
-                </p>
-                <a href="https://github.com/laraibkhan5"
-                   target="_blank">
-                    View on GitHub →
-                </a>
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <section id="experience">
-
-        <h2>Experience</h2>
-
-        <div class="experience">
-
-            <div class="experience-box">
-
-                <h3>IC Design Training</h3>
-
-                <p>
-                    Hands-on experience in RTL design, FPGA development,
-                    ASIC physical design and RTL-to-GDS flow using
-                    industry-relevant open-source tools.
-                </p>
-
-            </div>
-
-
-            <div class="experience-box">
-
-                <h3>Pakistan International Airlines (PIA)</h3>
-
-                <p>
-                    Electrical Engineering Intern with exposure to
-                    electrical systems, engineering practices and
-                    technical operations.
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <section id="contact" class="contact">
-
-        <h2>Let's Connect</h2>
-
-        <p>
-            Interested in Digital IC Design, FPGA Development and
-            ASIC Physical Design.
-        </p>
-
-        <br>
-
-        <a href="https://github.com/laraibkhan5" target="_blank">
-            GitHub
-        </a>
-
-        <a href="https://www.linkedin.com/in/laraib-khan-212a8326b/" target="_blank">
-            LinkedIn
-        </a>
-
-        <a href="mailto:laraib.k.khan344@gmail.com">
-            Email
-        </a>
-
-    </section>
-
-
-    <footer>
-
-        <p>© 2026 Laraib Khan. All Rights Reserved.</p>
-
-    </footer>
+</footer>
 
 </body>
 </html>
